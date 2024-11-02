@@ -16,7 +16,6 @@
 	<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
 
 	<style>
-		/* Ensure footer is at the bottom */
 		body, html {
 			display: flex;
 			flex-direction: column;
@@ -34,22 +33,27 @@
 			background-color: #333;
 			color: #fff;
 			padding: 10px 0;
-			position: relative;
 			width: 100%;
+			font-size: 14px;
 		}
 
-		/* Adjust spacing for mobile to prevent overlap */
 		@media (max-width: 768px) {
 			.tm-content {
-				margin-bottom: 50px; /* Ensure footer doesn’t overlap */
+				margin-bottom: 50px;
 			}
-
 			.footer-link {
 				position: fixed;
 				bottom: 0;
 				left: 0;
 				right: 0;
 				z-index: 100;
+			}
+		}
+
+		@media (max-width: 300px) {
+			.footer-link {
+				font-size: 10px;
+				padding: 5px 0;
 			}
 		}
 	</style>
@@ -75,15 +79,14 @@
 					<h1>C.H.A.D.S</h1>
 				</header>
 
-				<!-- News and Announcements -->
-				<h3>News, Updates, and Announcements</h3>
+				<h3>News, Updates and Announcements</h3>
 				<hr>
-				<h2>CHADS election results are out 🎉</h2>
+				<h2>CHADS elections results are out 🎉</h2>
 				<p>President - Manan Upadhyaya</p>
 				<p>Chancellor - Chloe Kim</p>
 				<p>Treasurer - Rhenea Williams</p>
-				<p>Executives - Manav Joshi, Hasan Khan, Kelvin Creighton, Sam Saharan, Andrei Fabon, Mihir Bhatt, Kenny Moc, Mannat, Shania Wen, Michael Lee, Tina, Kanishk Ashra, Rimsha Memon, Raezan Villamor, Samin, Joshua Sellin, Mehar, Lyra, and Paul</p>
-				<p>Join our Discord below to stay updated. We can't wait to see you all there!</p>
+				<p>Executive - Manav Joshi, Hasan Khan, Kelvin Creighton, Sam Saharan, Andrei Fabon, Mihir Bhatt, Kenny Moc, Mannat, Shania Wen, Michael Lee, Tina, Kanishk Ashra, Rimsha Memon, Raezan Villamor, Samin, Joshua Sellin, Mehar, Lyra, and Paul</p>
+				<p>Join our Discord below to keep up to date. We can't wait to see you all there!</p>
 				<hr>
 
 				<div class="tm-social-icons-container text-xs-center mx-auto section">
@@ -99,41 +102,55 @@
 			</div>
 		</div>
 
-		<!-- ABOUT Section -->
 		<section id="about">
 			<div class="container">
 				<div class="section-title">
-					<br>
 					<h2>About Us</h2>
 					<hr>
 				</div>
 
-				<!-- Content about the club -->
 				<div class="col-md-10 col-sm-6">
 					<small>1. Discord</small>
-					<p> 
-						To be a member of this club, all that is officially required is your email address. However, joining our Discord server will enhance your experience. Our server can be found <a href="https://discord.gg/V4V4t85KKk">here</a>.
-					</p>
-					<br>
+					<p>To be a member of this club, all that is officially required is your email address. All official correspondence will be done through email. However, your club experience will dramatically improve if you join our Discord server. Our server can be found <a href="https://discord.gg/V4V4t85KKk">here</a>.</p>
 				</div>
 
-				<!-- Executives -->
 				<div class="col-md-10 col-sm-6">
 					<small>2. Executives</small>
-					<p> 
-						We are excited to announce our new executive team:
-						Chancellor: Chloe Kim, President: Manan Upadhyaya, Treasurer: Jack MacArthur, Executives: Manav Joshi, Hasan Khan, Kelvin Creighton, and others.
-					</p>
-					<br>
+					<p>The results of our recent election have finally been validated, and we are pleased to announce our new executive team:</p>
+					<p>Chancellor: Chloe Kim</p>
+					<p>President: Manan Upadhyaya</p>
+					<p>Treasurer: Jack MacArthur</p>
+					<p>For the Executive Positions: Manav Joshi, Hasan Khan, Kelvin Creighton, Sam Saharan, Andrei Fabon, Mihir Bhatt, Kenny Moc, Mannat, Shania Wen, Michael Lee, Tina, Kanishk Ashra, Rimsha Memon, Raezan Villamor, Samin, Joshua Sellin, Mehar, Lyra, Paul</p>
 				</div>
+
+				<div class="col-md-10 col-sm-6">
+					<small>3. Volunteering</small>
+					<p>Currently, we could use help with improving/managing the website, handling social media accounts, and creating a logo (we currently lack official rights for our logo).</p>
+				</div>
+
+				<div class="col-md-10 col-sm-6">
+					<small>4. Club Room</small>
+					<p>We are actively working on securing a club room for our meetings and events.</p>
+				</div>
+
+				<div class="col-md-10 col-sm-6">
+					<small>5. Social Nights / Weekly Meetings</small>
+					<p>If there's enough interest and we can get a designated spot (i.e., a club room), we can start organizing weekly meetings and social nights. Feel free to take the initiative on this, and let us know so we can make it "club official."</p>
+				</div>
+
+				<div class="col-md-10 col-sm-6">
+					<small>Chancellor's Thanks</small>
+					<p>Lastly, thank you all for being a part of the club. I am excited about everything to come.</p>
+					<p>Yours sincerely,</p>
+					<p>Chancellor Kenny</p>
+				</div>
+
 			</div>
 		</section>
 
-		<!-- SCHEDULE Section -->
 		<section id="schedule">
 			<div class="container">
 				<div class="section-title">
-					<br>
 					<h2>Upcoming Events</h2>
 					<hr>
 				</div>
@@ -141,15 +158,14 @@
 				<div class="col-md-6 col-sm-6">
 					<small>October 31, 2024</small>
 					<p>Election</p>
-					<br>
 				</div>
 			</div>
 		</section>
-	</div>
 
-	<!-- Footer Link -->
-	<div class="footer-link">
-		<p>Copyright © 2024 UofA C.H.A.D.S - Design: TemplateMo</p>
+		<div class="footer-link">
+			<p>Copyright © 2024 UofA C.H.A.D.S - Design: TemplateMo</p>
+		</div>
+
 	</div>
 
 	<script type="text/javascript" src="js/particles.js"></script>
